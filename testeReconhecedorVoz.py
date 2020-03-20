@@ -4,11 +4,17 @@ r = sr.Recognizer()
 
 # Utilizando microfone como fonte de áudio
 with sr.Microphone() as fonte:
+    copia_arquivo = 1
     r.adjust_for_ambient_noise(fonte)  # Cancelando ruídos
     print('Diga alguma coisa: ')
     while True:
         audio = r.listen(fonte)  # Captura de voz
-        texto = r.recognize_google(audio, language='pt-BR')
+
+        # Salvando a voz reconhecida em um arquivo wav
+        with open(f'voz_{copia_arquivo}.wav', 'wb') as f:
+            f.write(audio.get_wav_data())
+        texto = r.recognize_google(audio, language='pt-BR') #Reconhecendo voz em português
+        copia_arquivo += 1
         try:
             print('Você disse: ' + texto)
         except sr.UnknownValueError:
