@@ -21,10 +21,10 @@ from TwitterSearch import *
 
 try:
     ts = TwitterSearch(
-        consumer_key='xe8Wlzs1rdOHDX4fHu8cYb7Qy',
-        consumer_secret='Illivaz5CMXmtoCgjHDBhcl1v8kXitSOIxkshxPFayFLWgRRGt',
-        access_token='182183908-bLvkunYwtYjwWk4kxKkGyNWe4xLjdGZiQVRyei7I',
-        access_token_secret='50E3ombHK4P8K9UGYE3k0TIjkF3zpTOFE6TAfwjnECj1T')
+        consumer_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        consumer_secret='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        access_token='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        access_token_secret='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
 
     tso = TwitterSearchOrder()
     tso.set_keywords(['iphone', 'android'])
